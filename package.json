@@ -14,8 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "author": "",
+  "author": "lovethebomb",
   "license": "ISC"
 }
