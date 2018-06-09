@@ -1,7 +1,7 @@
 {
   "name": "factorio.lucas.computer",
   "version": "1.0.0",
-  "description": "",
+  "description": "mini server status for factorio.lucas.computer",
   "main": "index.js",
   "dependencies": {
     "@types/express": "^4.16.0",
