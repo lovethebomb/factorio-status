@@ -10,15 +10,36 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "pug": "^2.0.3",
-    "rcon-ts": "^1.2.3"
+    "rcon-ts": "^1.2.3",
+    "typescript": "^2.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "jest": "^23.1.0",
+    "supertest": "^3.1.0",
+    "ts-jest": "^22.4.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest --coverage",
     "dev": "ts-node index.js",
     "build": "tsc",
     "start": "node index.js"
   },
   "author": "lovethebomb",
-  "license": "ISC"
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      ".ts": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/*"
+    ]
+  }
 }
