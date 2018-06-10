@@ -7,10 +7,11 @@
     "sourceMap": true,
     "inlineSources": true,
     "strict": true,
-    "outDir": "dist"
+    "outDir": "dist",
   },
   "compileOnSave": true,
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "factorio/__tests__"
   ]
 }

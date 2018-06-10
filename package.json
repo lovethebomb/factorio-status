@@ -22,7 +22,8 @@
   "scripts": {
     "test": "jest --coverage",
     "dev": "ts-node index.js",
-    "build": "tsc && npm run copy-assets",
+    "clean": "rm -Rf dist",
+    "build": "npm run clean && tsc && npm run copy-assets",
     "copy-assets": "cp -R views dist/views",
     "start": "node index.js"
   },
