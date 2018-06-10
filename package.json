@@ -16,7 +16,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "ts-node index.js",
-    "build": "tsc",
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "cp -R views dist/views",
     "start": "node index.js"
   },
   "author": "lovethebomb",
