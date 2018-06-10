@@ -11,8 +11,14 @@ const PORT = process.env.PORT || 3000;
 const DEFAULT_CACHE = "2 minutes";
 const RCON_HOST = process.env.RCON_HOST || 'factorio.lucas.computer';
 const RCON_PORT = process.env.RCON_PORT || 27015;
-const RCON_PASSWORD = process.env.RCON_PASSWORD || 'my-great-rcon-password';
+const RCON_PASSWORD = process.env.RCON_PASSWORD || null;
 const RCON_TIMEOUT = process.env.RCON_TIMEOUT || 5000;
+
+// Fail early
+if (!RCON_PASSWORD ) {
+    throw new Error('Missing RCON_PASSWORD, are you sure your env is set correctly?');
+}
+
 const config: RconConfig = {
     host: RCON_HOST,
     port: ~~RCON_PORT,
