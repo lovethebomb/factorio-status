@@ -40,7 +40,6 @@ app.set('view engine', 'pug');
 app.get('/', cache(DEFAULT_CACHE), async (req: any, res: any) => {
     let data = {};
     await factorio.run();
-    console.debug(factorio.rcon.errors);
     if (factorio.rcon.errors && factorio.rcon.errors.length > 0) {
         data = {
             isUp: false
@@ -57,3 +56,4 @@ app.get('/', cache(DEFAULT_CACHE), async (req: any, res: any) => {
     res.render('index', data);
 });
 app.listen(PORT, () => console.log('[+] express is running on ' + PORT));
+module.exports = app

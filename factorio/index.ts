@@ -12,7 +12,7 @@ class Factorio {
 
     constructor(rcon: Rcon) {
         if (!rcon) {
-            throw new Error('missing apiKey parameter');
+            throw new Error('missing rcon instance');
         }
 
         console.log(`[+] FactorioRcon created for ${rcon.host}:${rcon.port}, timeout of ${rcon.timeout}`);
