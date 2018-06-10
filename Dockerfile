@@ -27,5 +27,4 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/views ./views
 COPY --from=builder /app/dist /app/package.json /app/package-lock.json ./
 
-EXPOSE $PORT
 CMD [ "npm", "start" ]
