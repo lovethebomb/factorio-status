@@ -1,27 +1,28 @@
 {
-  "name": "factorio.lucas.computer",
+  "name": "factorio-status",
   "version": "1.0.0",
-  "description": "mini server status for factorio.lucas.computer",
+  "description": "mini server status for factorio",
   "main": "index.js",
   "dependencies": {
-    "@types/express": "^4.16.0",
-    "@types/node": "^10.3.1",
-    "apicache": "^1.2.1",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "pug": "^2.0.3",
+    "@types/express": "^4.17.9",
+    "@types/node": "^10.17.46",
+    "apicache": "^1.5.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
     "rcon-ts": "^1.2.3",
-    "typescript": "^2.9.1"
+    "typescript": "^2.9.2"
   },
   "devDependencies": {
-    "@types/jest": "^23.0.0",
-    "jest": "^23.1.0",
-    "supertest": "^3.1.0",
-    "ts-jest": "^22.4.6"
+    "@types/jest": "^23.3.14",
+    "jest": "^23.6.0",
+    "supertest": "^3.4.2",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^9.0.0"
   },
   "scripts": {
     "test": "jest --coverage",
-    "dev": "ts-node index.js",
+    "dev": "ts-node index.ts",
     "clean": "rm -Rf dist",
     "build": "npm run clean && tsc && npm run copy-assets",
     "copy-assets": "cp -R views dist/views",
