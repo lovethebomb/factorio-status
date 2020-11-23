@@ -1,6 +1,6 @@
 # factorio-status
 
-[![Build Status](https://travis-ci.com/lovethebomb/factorio-status.svg?branch=master)](https://travis-ci.com/lovethebomb/factorio-status
+[![Build Status](https://travis-ci.com/lovethebomb/factorio-status.svg?branch=master)](https://travis-ci.com/lovethebomb/factorio-status)
 
 The mini server status for the [Factorio](https://www.factorio.com) server [factorio.ilot.sh](https://factorio.ilot.sh), based on [rcon-ts](https://github.com/electricessence/rcon-ts).
 
