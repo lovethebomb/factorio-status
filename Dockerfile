@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:14-alpine as builder
 
 ENV NODE_ENV=production
 ENV PORT=3000
@@ -10,7 +10,7 @@ ENV RCON_TIMEOUT=5000
 RUN mkdir /app
 WORKDIR /app
 
-RUN npm install -g npm@v6.0.1 typescript@next
+RUN npm install -g typescript@next
 
 COPY package.json package-lock.json tsconfig.json /app/
 RUN npm ci 
@@ -20,7 +20,7 @@ COPY factorio/ /app/factorio
 COPY views/ /app/views
 RUN npm run build
 
-FROM node:alpine
+FROM node:14-alpine
 RUN mkdir /app
 WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules

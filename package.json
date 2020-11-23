@@ -1,6 +1,6 @@
 {
   "name": "factorio-status",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "mini server status for factorio",
   "main": "index.js",
   "dependencies": {
