@@ -9,7 +9,7 @@ require('dotenv').config()
 const dev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 3000;
 const DEFAULT_CACHE = "2 minutes";
-const RCON_HOST = process.env.RCON_HOST || 'factorio.lucas.computer';
+const RCON_HOST = process.env.RCON_HOST || 'factorio.domain.tld';
 const RCON_PORT = process.env.RCON_PORT || 27015;
 const RCON_PASSWORD = process.env.RCON_PASSWORD || null;
 const RCON_TIMEOUT = process.env.RCON_TIMEOUT || 5000;

@@ -2,7 +2,7 @@ FROM node:alpine as builder
 
 ENV NODE_ENV=production
 ENV PORT=3000
-ENV RCON_HOST='factorio.lucas.computer'
+ENV RCON_HOST='factorio.domain.tld'
 ENV RCON_PORT=27015
 ENV RCON_PASSWORD=
 ENV RCON_TIMEOUT=5000
