@@ -8,6 +8,10 @@
     "inlineSources": true,
     "strict": true,
     "outDir": "dist",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": ["node"]
   },
   "compileOnSave": true,
   "exclude": [
