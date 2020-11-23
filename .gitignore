@@ -7,4 +7,6 @@ npm-debug.log
 # generate
 dist
 
+coverage
+
 .env
