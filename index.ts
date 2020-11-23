@@ -38,8 +38,10 @@ app.set('view engine', 'pug');
 
 // Routes
 app.get('/', cache(DEFAULT_CACHE), async (req: any, res: any) => {
-    let data = {};
+    let data : any = {};
+
     await factorio.run();
+
     if (factorio.rcon.errors && factorio.rcon.errors.length > 0) {
         data = {
             isUp: false
@@ -53,6 +55,8 @@ app.get('/', cache(DEFAULT_CACHE), async (req: any, res: any) => {
             isUp: true
         }
     }
+
+    data.host = RCON_HOST
     res.render('index', data);
 });
 app.listen(PORT, () => console.log('[+] express is running on ' + PORT));

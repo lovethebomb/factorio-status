@@ -7,7 +7,7 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title factorio.lucas.computer - server status
+    title #{host} - server status
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="icon" type="assets/image/png" href="https://vignette.wikia.nocookie.net/factorio/images/6/64/Favicon.ico/revision/latest?cb=20160406185158")
     meta(name="theme-color" content="#111")
@@ -55,7 +55,7 @@ html
       }
   body
     article
-      h1 factorio.lucas.computer - status
+      h1 #{host} - status
       if !isUp
         +status(isUp)
       else
